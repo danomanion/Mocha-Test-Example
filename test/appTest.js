@@ -2,7 +2,6 @@ const assert = require("chai").assert;
 const app = require("../app");
 
 describe("App", function() {
-
   describe("sayHello()", function() {
     it("sayHello should return hello", function() {
       let result = app.sayHello();
@@ -13,7 +12,7 @@ describe("App", function() {
       let result = app.sayHello();
       assert.typeOf(result, "string");
     });
-  })
+  });
 
   describe("addNumbers()", function() {
     it("addNumbers returns a value above 5", function() {
